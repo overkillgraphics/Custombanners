@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Customize Your Text</h1>
+    <h1>Customize Your Banner</h1>
+
+    <!-- Background Image Selection -->
+    <label for="background">Select Banner Background:</label>
+    <select id="background">
+        <option value="image1.jpg">Banner 1</option>
+        <option value="image2.jpg">Banner 2</option>
+        <option value="image3.jpg">Banner 3</option>
+    </select>
+
+    <!-- Font Style Selection -->
     <label for="font">Font Style:</label>
     <select id="font">
         <option value="Bangers, cursive">Bangers</option>
@@ -19,6 +29,7 @@
         <option value="Impact, sans-serif">Impact</option>
     </select>
 
+    <!-- Font Color Selection -->
     <label for="color">Font Color:</label>
     <select id="color">
         <option value="#000000">Black</option>
@@ -31,6 +42,7 @@
         <option value="#800080">Purple</option>
     </select>
 
+    <!-- Stroke Color Selection -->
     <label for="stroke">Stroke Color:</label>
     <select id="stroke">
         <option value="#000000">Black</option>
@@ -43,8 +55,19 @@
         <option value="#800080">Purple</option>
     </select>
 
-    <div id="preview" style="color: #000000; -webkit-text-stroke: 2px #FFFFFF; font-family: Arial, sans-serif;">
-        Preview Text
+    <!-- Font Size Selection -->
+    <label for="fontSize">Font Size:</label>
+    <input type="number" id="fontSize" min="12" max="72" value="48">
+
+    <!-- Editable Text -->
+    <label for="editableText">Edit Text:</label>
+    <input type="text" id="editableText" placeholder="Type your text here" value="Preview Text">
+
+    <!-- Preview Area -->
+    <div id="preview" style="position: relative; width: 640px; height: 120px; margin: 20px auto; border: 1px solid #ccc; background-size: cover; background-repeat: no-repeat;">
+        <div id="textOverlay" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); color: #000000; -webkit-text-stroke: 2px #FFFFFF; font-family: Arial, sans-serif; font-size: 48px; text-align: center;">
+            Preview Text
+        </div>
     </div>
 
     <script src="script.js"></script>
