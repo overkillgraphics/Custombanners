@@ -4,11 +4,10 @@ body {
     margin: 20px;
 }
 #preview {
-    margin-top: 20px;
-    font-size: 48px;
-    display: inline-block;
+    border: 1px solid #ccc;
+    overflow: hidden;
 }
-select {
+select, input {
     margin: 10px;
     padding: 8px;
     font-size: 16px;
